@@ -49,6 +49,7 @@ int main(int argc, char *argv[])
     //buffer = "Hello World!! Lets have fun\n";
     //memset(buffer, 0 , sizeof(buffer));
     while(1) {
+        printf("Client started........\n");
         fgets(buffer,MAXSIZE-1,stdin);
         if ((send(socket_fd,buffer, strlen(buffer),0))== -1) {
             fprintf(stderr, "Failure Sending Message\n");
